@@ -11,7 +11,7 @@ const changeCounter = (e) => {
   } else if (action === "increment") {
     currentValue += 1;
   }
-  counterSpan.innerHTML = currentValue;
+  counterSpan.textContent = currentValue;
 };
 
 decrButton.addEventListener("click", changeCounter);
