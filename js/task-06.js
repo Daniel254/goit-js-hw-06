@@ -3,7 +3,9 @@ const validInputLength = validationInputEl.dataset.length;
 
 const onBlurHandler = () => {
   const className =
-    validInputLength === validationInputEl.value.length ? "valid" : "invalid";
+    Number(validInputLength) === validationInputEl.value.length
+      ? "valid"
+      : "invalid";
   validationInputEl.className = className;
 };
 

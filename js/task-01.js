@@ -4,8 +4,5 @@ console.log("Number of categories:", categoryItemEls.length);
 
 categoryItemEls.forEach((categoryItemEl) => {
   console.log("Category:", categoryItemEl.firstElementChild.textContent);
-  console.log(
-    "Elements:",
-    categoryItemEl.querySelector(":last-child").children.length
-  );
+  console.log("Elements:", categoryItemEl.lastElementChild.children.length);
 });
